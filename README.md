@@ -66,6 +66,6 @@ npm install
 npm run deploy
 ```
 
-Workers Buildsをこのリポジトリの `main` に接続すれば、変更時に自動公開できます。ビルドコマンドは `npm run build`、デプロイコマンドは `npm run deploy` です。Cloudflare側とのGit連携の設定ができるまでは、GitHubへのpushだけでは自動公開されません。
+**Cloudflare Workers Builds と `Karin-Laboratory/koyomi` の `main` は接続済みです。** `main` に変更をpushすると、このアプリ専用Worker `today-japan-seasons` の自動ビルド・自動公開が実行されます（公開の成否はCloudflareのビルド履歴で確認してください）。ビルドコマンドは `npm run build`、デプロイコマンドは `npm run deploy` です。
 
 本リポジトリ専用の設定以外に、既存アプリ・DNSレコード・Workerの設定を変更する必要はありません。
